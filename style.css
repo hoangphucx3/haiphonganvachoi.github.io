@@ -1,0 +1,221 @@
+* {box-sizing: border-box;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+body {
+    margin: auto;
+    font-family: 'Arima Madurai', cursive;
+    border: solid 1px transparent;
+    max-width: 1200px;
+    position: relative;
+}
+
+p {text-align: justify;}
+
+.menu {
+    background-color: navy;
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 47px;
+    padding: 0;
+    z-index: 1;
+    border: solid 1px transparent;
+}
+
+.show {
+    display: inline-block;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+}
+
+.hidden>a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 110%;
+    border-bottom: solid 1px white;
+}
+
+.menu-left {
+    width: 19%;
+    float: left;
+}
+
+.menu-right {
+    width: 19%;
+    float: right;
+}
+
+div>button {
+    background-color: navy;
+    width: 100%;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90%;
+    border-radius: 10px;
+    height: 45px;
+}
+button>a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.show:hover .hidden {
+    display: block;
+    width: 100%;
+    background-color: navy;
+    font-family: 'Dancing Script', cursive;
+}
+
+.mySlides {display: none}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 200px;
+}
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+.maintext {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 85%;
+    border-bottom: double 7px orangered;
+}
+
+.title {
+    display: block;
+    width: 100%;
+    text-decoration: underline;
+    text-underline-position: under;
+    background-color: orange;
+}
+
+.img-link {
+    text-decoration: none;
+}
+
+div>a:hover {
+    color:blue;
+    text-decoration: underline;    
+}
+.img-col {
+    width: 100%;
+    height: 50%;
+}
+
+.hot {
+    width: 50%;
+    float: none;
+    padding-right: 20px;
+    vertical-align: bottom
+}
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+    border: 1px solid transparent;
+}
+
+img.intext {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.footer {
+    background-color: rgb(110, 80, 179);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border: solid 1px transparent;
+    padding-bottom: 30px;
+}
+
+.footer p,h4 {
+    color: black;
+}
+
+.footer input {
+    margin-top: 5px;
+    width: 200px;
+}
+
+[class*=col-] {width: 100%;}
+
+@media only screen and (min-width: 768px) {    
+    .col-4 {width: 100%;}
+    .col-8 {width: 100%;}
+    .col-4s {width: 50%;}
+
+    .menu-left {width: 15%;}
+    .menu-right {width: 15%;}
+    div>button {
+        padding: 10px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 130%;
+    }
+    img {height: 500px;}
+    .maintext {font-size: 120%;}
+}
+
+@media only screen and (min-width: 992px) {
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-4s {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-s-4 {width: 33.33%;}
+
+.maintext {font-size: 120%;
+    border: solid 1px transparent;
+    border-bottom: double 7px orangered;
+    background: url("haiphong/hoa-phuong.png") top left no-repeat;
+}
+}

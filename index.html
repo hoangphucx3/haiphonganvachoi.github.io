@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hải Phòng - Ăn và Chơi</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Arima+Madurai:wght@300&display=swap" rel="stylesheet">
+<body>
+    <div class="menu">
+        <button class="menu-left"><a href="index.html" alt="Trang chủ">Trang chủ</a></button>
+        <div class="show menu-left">
+            <button><a href="#didau" alt="Đi đâu?">Đi đâu?</a></button>
+                <div class="hidden">
+                    <a href="doson.html" alt="Đồ Sơn">Đồ Sơn</a>
+                    <a href="catba.html" alt="Cát Bà">Cát Bà</a>
+                    <a href="tuyettinhcoc.html" alt="Tuyệt Tình Cốc">Tuyệt Tình Cốc</a>
+                </div>
+        </div>
+        <div class="show menu-left">
+            <button><a href="#angi" alt="Ăn gì>">Ăn gì?</a></button>
+                <div class="hidden">
+                    <a href="banhdacua.html" alt="Bánh đa cua">Bánh đa cua</a>
+                    <a href="banhmicay.html" alt="Bánh mì cay">Bánh mì cay</a>
+                    <a href="ocnong.html" alt="Ốc nóng">Ốc nóng</a>
+                </div>
+        </div>
+        <button class="menu-right"><a href="#lienhe" alt="Liên hệ">Liên hệ</a></button>
+        <button class="menu-right"><a href="#" alt="Giới thiệu">Giới thiệu</a></button>
+    </div>
+    <header>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="haiphong/hai-phong1.jpg">
+            </div>
+            <div class="mySlides fade">
+              <img src="haiphong/hai-phong2.jpg">
+            </div>
+            <div class="mySlides fade">
+              <img src="haiphong/hai-phong3.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="haiphong/hai-phong4.jpg">
+            </div>
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 3000);
+                }
+            </script>
+        </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="maintext" id="didau">
+                <h1>Hải Phòng - Ăn và Chơi</h1>
+                <h2>Cùng khám phá các địa điểm check-in và ăn vặt số 1 tại Hải Phòng</h2>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <h2 class="title">Sống ảo mỗi ngày</h2>
+                    <div class="col-4s">
+                        <a class="img-link" href="doson.html" alt="Đồ Sơn">
+                        <img class="img-col" src="haiphong/do-son.jpg" alt="Đồ Sơn">
+                        <h3>Đồ Sơn</h3>
+                        </a>
+                        <p>Một trong những bãi biển quốc nội đẹp nhất với đẩy đủ dịch vụ bạn mong muốn.</p>
+                        <p>Chưa đi chưa biết Đồ Sơn...</p>
+                    </div>
+                        <div class="col-4s">
+                        <a class="img-link" href="catba.html" alt="Cát Bà">
+                        <img class="img-col" src="haiphong/cat-ba1.jpg" alt="Cát Bà">
+                        <h3>Cát Bà</h3>
+                        </a>
+                        <p>Huyện đảo Cát Bà với rừng, biển, đảo mang vẻ đẹp say đắm mê lòng người.</p>
+                        <p>Cát Bà - Nàng tiên đang tỉnh giấc...</p>
+                    </div>
+                    <div class="col-4s">
+                        <a class="img-link" href="tuyettinhcoc.html" alt="Tuyệt Tình Cốc">
+                        <img class="img-col" src="haiphong/tuyet-tinh-coc.jpg" alt="Tuyệt Tình Cốc">
+                        <h3>Tuyệt Tình Cốc</h3>
+                        </a>
+                        <p>Địa điểm sống ảo hot nhất Vịnh Bắc Bộ sẽ đưa bạn lạc vào thế giới cổ trang.</p>
+                        <p>Hỏi thế gian tình ái là chi...</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 class="title" id="angi">Ăn ngon-bổ-rẻ</h2>
+                    <div class="col-4s">
+                        <a class="img-link" href="banhdacua.html" alt="Bánh đa cua">
+                            <img class="img-col" src="haiphong/banh-da-cua.jpg" alt="Bánh đa cua">
+                            <h3>Bánh đa cua</h3>
+                            </a>
+                            <p>Món ăn thương hiệu của Hải Phòng, tuy bình dị mà tinh tế.</p>
+                    </div>
+                    <div class="col-4s">
+                        <a class="img-link" href="banhmicay.html" alt="Bánh mì cay">
+                            <img class="img-col" src="haiphong/banh-mi-cay.jpg" alt="Bánh mì cay">
+                            <h3>Bánh mì cay</h3>
+                            </a>
+                            <p>Một chút nóng, một chút cay, ngon chuẩn cơm mẹ nấu.</p>
+                    </div>
+                    <div class="col-4s">
+                        <a class="img-link" href="ocnong.html" alt="Ốc nóng">
+                            <img class="img-col" src="haiphong/oc.jpg" alt="Ốc nóng">
+                            <h3>Ốc nóng</h3>
+                            </a>
+                            <p>Ốc nóng full option, chấm mút hoài không chán.</p>
+                    </div>
+                 </div>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <h2 class="title">Nổi bật</h2>
+                    <div class="col-12">
+                        <a class="img-link" href="tuyettinhcoc.html" alt="Tuyệt Tình Cốc">
+                            <img class="img-col hot" src="haiphong/tuyet-tinh-coc.jpg" alt="Tuyệt Tình Cốc">
+                            <h3 style="display: inline;">Tuyệt Tình Cốc</h3>
+                            </a>
+                            <p>Địa điểm sống ảo hot nhất Vịnh Bắc Bộ sẽ đưa bạn lạc vào thế giới cổ trang.</p>
+                            <p>Hỏi thế gian tình ái là chi...</p><hr>
+                    </div>
+                    <div class="col-12">
+                        <a class="img-link" href="ocnong.html" alt="Ốc nóng">
+                            <img class="img-col hot" src="haiphong/oc.jpg" alt="Ốc nóng">
+                            <h3 style="display: inline;">Ốc nóng</h3>
+                            </a>
+                            <p>Ốc nóng full option, chấm mút hoài không chán.</p><hr>
+                    </div>
+                    <div class="col-12">
+                        <a class="img-link" href="banhmicay.html" alt="Bánh mì cay">
+                            <img class="img-col hot" src="haiphong/banh-mi-cay.jpg" alt="Bánh mì cay">
+                            <h3 style="display: inline;">Bánh mì cay</h3>
+                            </a>
+                            <p>Một chút nóng, một chút cay, ngon chuẩn cơm mẹ nấu.</p><hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="lienhe" class="row footer">
+        <div class="col-8">
+            <h4>Hải Phòng Ăn và Chơi</h4>
+            <p>Thông tin liên hệ:<br>
+                Địa chỉ: Số 17 lô 2 KCN Hoàng Thành, Dương Kinh, Hải Phòng.<br>
+                Điện thoại: 0225.999999<br>
+                Email: haiphonganvachoi@gmail.com
+            </p>
+        </div>
+        <div class="col-4">
+            <p style="padding-top: 45px;">Đăng ký nhận thông tin tư vấn:<br>
+                <input type="text" placeholder="Họ và tên" required><br>
+                <input tyle="text" placeholder="Email" required><br>
+                <button>Đăng ký</button>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
